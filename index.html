@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Aca creamos 3 etiquetas que tendran
+         un mismo estilo en css-->
+    <h4>Hola</h4>
+    <h5>Soy Daniel Mateo</h5>
+    <h2>Y quiero ser programador</h2>
+
+    <!-- Aca creamos un p en el cual hay 2 span en lo que el primero es
+          texto normal y el segundo actua como botón -->
+    <p>
+        ...
+        <span>texto1</span>
+        ...
+        <a href="">...<span>texto2</span></a>
+        ...
+      </p>
+
+<!-- Aca tenemos 3 elementos p, de los cuales solo el primero no 
+    sera afectado por el estilo establecido en css -->
+      <p><a href="#">Enlace</a></p>
+      <p><span><a href="#">Enlace</a></span></p>
+      <p><span><a href="#">Enlace</a></span></p>
+
+
+      <!-- Si se quisiera solo seleccionar el primer parrafo, 
+      lo mejor sería crear una clase para dicho elemento p -->
+      <body>
+        <p class="destacado">Lorem ipsum dolor sit amet...</p>
+        <p>Nunc sed lacus et est adipiscing accumsan...</p>
+        <p>Class aptent taciti sociosqu ad litora...</p>
+      </body>        
+
+    <!--Aca se toma en cuenta los hijos directos
+     del ul quienes cambiaran de estilo en css-->
+    <div class="text_red"><p>Este texto es rojo</p></div>
+    <p>Este texto es negro</p>
+    <ul>
+        <ul>
+            <li>Unordered item</li>
+            <li>Unordered item
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ol>
+            </li>
+        </ul>
+
+        <!--Aca tomamos en cuenta el p
+        que va a ir justo después del h1-->
+        <article>
+            <h1>A heading</h1>
+            <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo
+                    melon azuki bean garlic.</p>
+        
+            <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
+                    greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+        </article>
+
+        <!--Aca se tienen en cuenta todos
+      los elementos p que van después de h1-->
+        <article>
+            <h1>Hola</h1>
+            <p>Soy Mateo</p>
+            <div>Y quiero ser</div>
+            <p>Un programador</p>
+        </article>  
+
+        <!--Aca se hace algo similar al ejemplos de los hijos directos, solo que aqui 
+            solo más especifico de cual ul queremos tomar, esto mediante una clase-->
+        <ul class="a">
+            <ul Hola soy Matthew>
+            <ol>
+                <li>Y quiero ser un cocinero</li>
+            </ol>
+            <li>Y quiero ser un programador</il>
+        </ul>
+        </ul>  
+
+        <p class="CG">
+        <span>span!</span>
+        <span>span!</span>
+        <span>span!</span>
+        </p>
+
+        <p class="CR">
+        <em>em!</em><em>em!</em><em>em!</em>
+    </p>
+</body>
+</html
+

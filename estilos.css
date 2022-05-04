@@ -1,0 +1,57 @@
+/*Selector universal: Selecciona todos los elementos de la pagina */
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+/*Aca se le aplico el mismo estilo a 3 etiquetas diferentes */
+h4 , h2 , h5 {
+    color: green;
+}
+/* El selector del siguiente ejemplo selecciona todos los elementos
+ <span> de la página que se encuentren dentro de un elemento <p>: */
+p span { color: red; }
+
+/* Se toman los elemento p dentro de la clase "text_red */
+.text_red p {color: red; }
+
+/* Aca solo se le aplica el color rojo al segundo elemento a dentro del elemento p */
+p * a { color: green; }
+
+.destacado { color: blue }
+
+
+/* Por que aca no se modifica el ol que esta dentro del segundo il si se supone que hace parte del il */
+ul > li {
+    border-top: 5px solid red;
+}  
+h1 + p {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: .5em;
+}  
+h1 ~ p {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: .5em;
+} 
+/* Puedes combinar cualquiera de los selectores de los artículos anteriores
+ con selectores de combinación para seleccionar una parte del documento. 
+ Por ejemplo, podrías utilizar el código siguiente para seleccionar elementos
+de una lista con una clase «a» que son hijos directos de <ul>: */
+ul > li[class="a"]  { 
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: .5em;
+ }
+
+.CG span {
+    background-color: chartreuse;
+}
+
+.CR em {
+    background-color: rosybrown;
+}
